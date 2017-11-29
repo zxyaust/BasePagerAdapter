@@ -1,12 +1,20 @@
 # BasePagerAdapter
 BasePagerAdapter very easy to use 非常简单的BasePagerAdapter
 ## How to use
+
   1.download BasePagerAdapter.java and add it to your project
-  2.Viewpager vp = (Viewpager) findViewById(R.id.vp);
+  
+  2.
+```
+Viewpager vp = (Viewpager) findViewById(R.id.vp); 
       List<String> list = new ArrayList<>();
+      
       list.add("http://xxx.xxx.xxx");
+      
       list.add("http://xxx.xxx.xxx");
+      
       list.add("http://xxx.xxx.xxx");
+      
         BasePagerAdapter<String> adapter = new BasePagerAdapter<String>(list) {
                 @Override
                 public View bindView(String bean) {
@@ -26,3 +34,4 @@ BasePagerAdapter very easy to use 非常简单的BasePagerAdapter
                 }
             });
             vp.setAdapter(adapter);
+```
